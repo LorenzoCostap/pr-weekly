@@ -1,6 +1,6 @@
 // Brasília não tem mais horário de verão desde 2019 — por isso um offset
 // fixo de -3h já resolve, sem precisar de biblioteca de timezone.
-const TZ_OFFSET_MS = 3 * 60 * 60 * 1000;
+export const TZ_OFFSET_MS = 3 * 60 * 60 * 1000;
 
 // Janelas de expediente, em minutos desde 00:00 (horário local).
 const WORK_WINDOWS = [
@@ -8,7 +8,7 @@ const WORK_WINDOWS = [
   { startMin: 13 * 60 + 15, endMin: 18 * 60 }, // 13:15–18:00
 ];
 
-function toLocal(utcDate) {
+export function toBrasiliaLocal(utcDate) {
   return new Date(utcDate.getTime() - TZ_OFFSET_MS);
 }
 
@@ -21,8 +21,8 @@ export function businessMillisBetween(start, end) {
   if (end <= start) return 0;
 
   let totalMs = 0;
-  let cursor = toLocal(start);
-  const localEnd = toLocal(end);
+  let cursor = toBrasiliaLocal(start);
+  const localEnd = toBrasiliaLocal(end);
 
   while (cursor < localEnd) {
     const dayStart = new Date(

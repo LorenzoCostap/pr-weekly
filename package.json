@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node tests/metrics.test.mjs"
+    "test": "node tests/metrics.test.mjs && node tests/report-window.test.mjs"
   },
   "engines": {
     "node": ">=20"

@@ -3,12 +3,10 @@ import { loadLog } from "./snapshot.js";
 import { selectReportIssues, buildReport } from "./metrics.js";
 import { findPRsForIssues } from "./github.js";
 import { sendReport } from "./email.js";
-
-const DAYS_BACK = 7;
+import { getReportWindow } from "./report-window.js";
 
 async function main() {
-  const end = new Date();
-  const start = new Date(end.getTime() - DAYS_BACK * 24 * 60 * 60 * 1000);
+  const { start, end } = getReportWindow();
 
   const log = loadLog();
   const issues = selectReportIssues(log, { start, end });

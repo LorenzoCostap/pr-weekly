@@ -43,7 +43,7 @@ Abra o Project no navegador — a URL tem o formato
 
 | Secret | Onde conseguir |
 |---|---|
-| `GH_PAT` | GitHub → Settings → Developer settings → Personal access tokens (fine-grained). Precisa de: leitura de **Pull requests** e **Contents** no repositório do projeto, e permissão de organização **Projects: Read** (pra ler o Projects v2 via GraphQL). |
+| `GH_PAT` | GitHub → Settings → Developer settings → Personal access tokens (fine-grained). Precisa de: leitura de **Contents**, **Issues** e **Pull requests** no repositório do projeto, e permissão de organização **Projects: Read** (pra ler o Projects v2 via GraphQL). |
 | `PROJECT_ORG` | login da organização (ex: `datachamp-processamentos-e-servicos`) |
 | `PROJECT_NUMBER` | número do Project (veja o passo 2) |
 | `REPORT_GITHUB_OWNER` | dono do repositório onde as PRs são abertas |
