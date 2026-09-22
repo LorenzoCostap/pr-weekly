@@ -1,0 +1,21 @@
+{
+  "name": "weekly-pr-report",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node tests/metrics.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@octokit/graphql": "^8.0.0",
+    "@octokit/rest": "^21.0.0",
+    "nodemailer": "^10.0.10"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.0"
+  }
+}
