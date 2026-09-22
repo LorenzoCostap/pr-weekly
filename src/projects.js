@@ -38,7 +38,18 @@ export async function getCurrentItems(token, { org, projectNumber, assigneeLogin
 
   while (hasNextPage) {
     const result = await client(QUERY, { org, number: projectNumber, cursor });
-    const page = result.organization.projectV2.items;
+    const projectV2 = result.organization?.projectV2;
+
+    if (!projectV2) {
+      throw new Error(
+        `Não encontrei o Project número ${projectNumber} na organização "${org}". ` +
+          `Confirme o PROJECT_NUMBER e o PROJECT_ORG, e confirme que o GH_PAT tem a ` +
+          `permissão de organização "Projects: Read-only" e não está pendente de aprovação ` +
+          `(GitHub → Settings → Developer settings → Fine-grained tokens → status deve ser "Active").`
+      );
+    }
+
+    const page = projectV2.items;
 
     for (const node of page.nodes) {
       const issue = node.content;

@@ -1,18 +1,20 @@
 import { detectTransitions } from "../src/snapshot.js";
-import { selectReportIssues, buildReport, sumStatusDuration } from "../src/metrics.js";
+import { selectReportIssues, buildReport, sumStatusHours } from "../src/metrics.js";
 import { STATUS } from "../src/config.js";
 
-// Simula 6 dias de snapshot pra issue #1413:
-// dia1: A Fazer -> dia2: Em progresso -> dia4: Aguardando PR (2 dias em dev)
-// -> dia5: Em progresso (voltou, pedido de alteração) -> dia6: Aguardando PR -> dia7: Feito
+// Simula 7 dias de snapshot pra issue #1413, sempre às 18:00 (horário de
+// Brasília — fim do expediente), cruzando um fim de semana de propósito:
+// Ter(1) A Fazer -> Qua(2) Em progresso -> Qui(3) Em progresso (repete, sem
+// transição nova) -> Sex(4) Aguardando PR -> Sáb(5) Em progresso (voltou
+// pra corrigir) -> Dom(6) Aguardando PR -> Seg(7) Feito
 const days = [
-  { date: "2026-09-01T21:00:00Z", status: STATUS.todo },
-  { date: "2026-09-02T21:00:00Z", status: STATUS.inProgress },
-  { date: "2026-09-03T21:00:00Z", status: STATUS.inProgress },
-  { date: "2026-09-04T21:00:00Z", status: STATUS.waitingPR },
-  { date: "2026-09-05T21:00:00Z", status: STATUS.inProgress },
-  { date: "2026-09-06T21:00:00Z", status: STATUS.waitingPR },
-  { date: "2026-09-07T21:00:00Z", status: STATUS.done },
+  { date: "2026-09-01T21:00:00Z", status: STATUS.todo },          // terça
+  { date: "2026-09-02T21:00:00Z", status: STATUS.inProgress },    // quarta
+  { date: "2026-09-03T21:00:00Z", status: STATUS.inProgress },    // quinta (repete)
+  { date: "2026-09-04T21:00:00Z", status: STATUS.waitingPR },     // sexta
+  { date: "2026-09-05T21:00:00Z", status: STATUS.inProgress },    // sábado
+  { date: "2026-09-06T21:00:00Z", status: STATUS.waitingPR },     // domingo
+  { date: "2026-09-07T21:00:00Z", status: STATUS.done },          // segunda
 ];
 
 let log = { lastSnapshot: {}, transitions: [] };
@@ -21,22 +23,26 @@ for (const day of days) {
   log = detectTransitions(log, items, new Date(day.date));
 }
 
-console.log("Transições registradas:", log.transitions.length, "(esperado 6 — a 1ª observação + 5 mudanças reais, sem repetir o dia3)");
-console.assert(log.transitions.length === 6, "Deveria ter 6 transições, não repetir status igual");
+// Em progresso: qua18h->sex18h (17h úteis: quinta + sexta inteiras) +
+//               sáb18h->dom18h (0h, fim de semana) = 17h
+const devHours = sumStatusHours(log.transitions, STATUS.inProgress);
+console.log("dev hours (esperado 17):", devHours);
+console.assert(devHours === 17, "devHours incorreto");
 
-const devDays = sumStatusDuration(log.transitions, STATUS.inProgress);
-const reviewDays = sumStatusDuration(log.transitions, STATUS.waitingPR);
-console.log("dev days (esperado 3 — 1 dia + 2 dias):", devDays);
-console.log("review days (esperado 2 — 1 dia + 1 dia):", reviewDays);
-console.assert(devDays === 3, "dev days incorreto");
-console.assert(reviewDays === 2, "review days incorreto");
+// Aguardando PR: sex18h->sáb18h (0h, cai no fim de semana) +
+//                dom18h->seg18h (8.5h, 1 dia útil inteiro) = 8.5h
+const reviewHours = sumStatusHours(log.transitions, STATUS.waitingPR);
+console.log("review hours (esperado 8.5):", reviewHours);
+console.assert(reviewHours === 8.5, "reviewHours incorreto");
 
-// Janela do relatório: última semana (issue foi pra Feito dentro dela)
+// Janela do relatório: a issue foi pra "Feito" dentro da semana
 const start = new Date("2026-09-01T00:00:00Z");
 const end = new Date("2026-09-08T00:00:00Z");
 const issues = selectReportIssues(log, { start, end });
-console.assert(issues.length === 1, "deveria selecionar a issue 1413 (foi pra Feito na janela)");
+console.assert(issues.length === 1, "deveria selecionar a issue 1413");
 
+// Changes requested no sábado de manhã (fora do expediente) -> merge na segunda 18h:
+// só a segunda inteira conta (8.5h), sábado inteiro é fim de semana.
 const prsByIssueNumber = new Map([
   [
     1413,
@@ -52,7 +58,7 @@ const prsByIssueNumber = new Map([
 
 const rows = buildReport(issues, prsByIssueNumber);
 console.log(rows);
+console.assert(rows[0].postChangeHours === 8.5, "postChangeHours incorreto");
 console.assert(rows[0].hadChangesRequested === true, "hadChangesRequested incorreto");
-console.assert(rows[0].devDays === 3, "devDays incorreto na linha final");
 
 console.log("\nTodos os asserts passaram (nenhuma falha 'Assertion failed' acima).");

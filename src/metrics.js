@@ -1,4 +1,5 @@
 import { STATUS } from "./config.js";
+import { businessMillisBetween } from "./business-hours.js";
 
 /**
  * Escolhe as issues relevantes pro relatório: as que foram pra "Feito" dentro
@@ -33,11 +34,11 @@ export function selectReportIssues(log, { start, end }) {
 }
 
 /**
- * Soma quantos dias (corridos) a issue passou em `statusName`, somando todos
- * os períodos (pode ter entrado e saído mais de uma vez). Precisão de ~1 dia,
- * pois é a granularidade do snapshot diário.
+ * Soma quantas horas ÚTEIS (dentro do expediente, seg a sex) a issue passou
+ * em `statusName`, somando todos os períodos. Tempo fora do expediente ou
+ * em fim de semana não entra na conta.
  */
-export function sumStatusDuration(transitions, statusName) {
+export function sumStatusHours(transitions, statusName) {
   let totalMs = 0;
   let prevStatus = null;
   let prevTime = null;
@@ -45,34 +46,35 @@ export function sumStatusDuration(transitions, statusName) {
   for (const t of transitions) {
     const at = new Date(t.at);
     if (prevStatus === statusName && prevTime) {
-      totalMs += at - prevTime;
+      totalMs += businessMillisBetween(prevTime, at);
     }
     prevStatus = t.toStatus;
     prevTime = at;
   }
 
-  return +(totalMs / 86_400_000).toFixed(1);
+  return +(totalMs / 3_600_000).toFixed(1);
 }
 
 export function buildReport(issues, prsByIssueNumber) {
   return issues.map((issue) => {
-    const devDays = sumStatusDuration(issue.transitions, STATUS.inProgress);
-    const reviewDays = sumStatusDuration(issue.transitions, STATUS.waitingPR);
+    const devHours = sumStatusHours(issue.transitions, STATUS.inProgress);
+    const reviewHours = sumStatusHours(issue.transitions, STATUS.waitingPR);
     const pr = prsByIssueNumber.get(issue.issueNumber);
 
-    let postChangeDays = null;
+    let postChangeHours = null;
     if (pr?.hadChangesRequested && pr.mergedAt) {
-      postChangeDays = +((pr.mergedAt - pr.firstChangesRequestedAt) / 86_400_000).toFixed(1);
+      const ms = businessMillisBetween(pr.firstChangesRequestedAt, pr.mergedAt);
+      postChangeHours = +(ms / 3_600_000).toFixed(1);
     }
 
     return {
       issueNumber: issue.issueNumber,
       title: issue.title,
       status: issue.status,
-      devDays,
-      reviewDays,
+      devHours,
+      reviewHours,
       hadChangesRequested: pr?.hadChangesRequested ?? null,
-      postChangeDays,
+      postChangeHours,
       prUrl: pr?.url ?? null,
     };
   });

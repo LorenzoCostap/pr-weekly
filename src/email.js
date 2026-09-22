@@ -14,11 +14,11 @@ export async function sendReport({ user, appPassword, to }, rows) {
   });
 }
 
-function buildHtmlTable(rows) {
+export function buildHtmlTable(rows) {
   const header = `
     <tr>
-      <th>Task</th><th>Status</th><th>Dev (dias)</th><th>Review (dias)</th>
-      <th>Voltou p/ alteração?</th><th>Dias pós-alteração</th><th>PR</th>
+      <th>Task</th><th>Status</th><th>Dev (horas úteis)</th><th>Review (horas úteis)</th>
+      <th>Voltou p/ alteração?</th><th>Horas úteis pós-alteração</th><th>PR</th>
     </tr>`;
 
   const body = rows
@@ -27,10 +27,10 @@ function buildHtmlTable(rows) {
     <tr>
       <td>#${r.issueNumber} — ${r.title}</td>
       <td>${r.status}</td>
-      <td>${r.devDays}</td>
-      <td>${r.reviewDays}</td>
+      <td>${r.devHours}</td>
+      <td>${r.reviewHours}</td>
       <td>${r.hadChangesRequested === null ? "—" : r.hadChangesRequested ? "Sim" : "Não"}</td>
-      <td>${r.postChangeDays ?? "—"}</td>
+      <td>${r.postChangeHours ?? "—"}</td>
       <td>${r.prUrl ? `<a href="${r.prUrl}">link</a>` : "—"}</td>
     </tr>`
     )
