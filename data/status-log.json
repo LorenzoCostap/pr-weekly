@@ -547,6 +547,14 @@
     "1553": {
       "status": "Feito",
       "title": "Add novas permissões para Root"
+    },
+    "1573": {
+      "status": "Aguardando PR",
+      "title": "Criar novo AccessChannel"
+    },
+    "1574": {
+      "status": "A Fazer",
+      "title": "Restringir acesso a usuarios tipo `API`"
     }
   },
   "transitions": [
@@ -1240,6 +1248,16 @@
       "fromStatus": "Aguardando PR",
       "toStatus": "Feito",
       "at": "2026-09-23T13:25:25.332Z"
+    },
+    {
+      "issueNumber": 1573,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-23T22:06:38.285Z"
+    },
+    {
+      "issueNumber": 1574,
+      "toStatus": "A Fazer",
+      "at": "2026-09-23T22:06:38.285Z"
     }
   ]
 }
