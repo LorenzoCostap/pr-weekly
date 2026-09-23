@@ -1,4 +1,1239 @@
 {
-  "lastSnapshot": {},
-  "transitions": []
+  "lastSnapshot": {
+    "1077": {
+      "status": "Feito",
+      "title": "AlterarTituloBeforeExecuteLoad lançando RuntimeException"
+    },
+    "1124": {
+      "status": "Feito",
+      "title": "Criar PcpOcorrencias"
+    },
+    "1125": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaEntity"
+    },
+    "1126": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrencias Domain"
+    },
+    "1127": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciasDTO"
+    },
+    "1128": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciasEntityMapper"
+    },
+    "1129": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciasDTOMapper"
+    },
+    "1130": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciasRepository"
+    },
+    "1131": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaCreateUseCase"
+    },
+    "1132": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaFindByIdUseCase"
+    },
+    "1133": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaDeleteUseCase"
+    },
+    "1134": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaUpdateUseCase"
+    },
+    "1135": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaFIndByCriteriaUseCase"
+    },
+    "1136": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaAdapter"
+    },
+    "1137": {
+      "status": "Feito",
+      "title": "Criar o PcpOcorrenciaController"
+    },
+    "1154": {
+      "status": "Feito",
+      "title": "Criar ProcessoItem"
+    },
+    "1155": {
+      "status": "Feito",
+      "title": "Criar ProcessoItemEntity"
+    },
+    "1156": {
+      "status": "Feito",
+      "title": "Criar ProcessoItem Domain"
+    },
+    "1157": {
+      "status": "Feito",
+      "title": "Criar ProcessoItemDTO"
+    },
+    "1158": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemMapperEntity"
+    },
+    "1159": {
+      "status": "Feito",
+      "title": "Criar ProcessoItemMapperDTO"
+    },
+    "1160": {
+      "status": "Feito",
+      "title": "Criar ProcessoItemRepository"
+    },
+    "1174": {
+      "status": "Feito",
+      "title": "Criar Producao"
+    },
+    "1175": {
+      "status": "Feito",
+      "title": "Criar o ProducaoEntity"
+    },
+    "1176": {
+      "status": "Feito",
+      "title": "Criar o Producao Domain"
+    },
+    "1177": {
+      "status": "Feito",
+      "title": "Criar o ProducaoDTO"
+    },
+    "1178": {
+      "status": "Feito",
+      "title": "Criar o ProducaoMapperEntity"
+    },
+    "1179": {
+      "status": "Feito",
+      "title": "Criar o ProducaoMapperDTO"
+    },
+    "1180": {
+      "status": "Feito",
+      "title": "Criar o ProducaoRepository"
+    },
+    "1181": {
+      "status": "Feito",
+      "title": "Criar o ProducaoCreateUseCase"
+    },
+    "1182": {
+      "status": "Feito",
+      "title": "Criar o ProducaoFindByIdUseCase"
+    },
+    "1183": {
+      "status": "Feito",
+      "title": "Criar o ProducaoDeleteUseCase"
+    },
+    "1184": {
+      "status": "Feito",
+      "title": "Criar o ProducaoUpdateUseCase"
+    },
+    "1185": {
+      "status": "Feito",
+      "title": "Criar o ProducaoAdapter"
+    },
+    "1186": {
+      "status": "Feito",
+      "title": "Criar o ProducaoController"
+    },
+    "1187": {
+      "status": "Feito",
+      "title": "Criar o ProducaoFindByCriteriaUseCase"
+    },
+    "1188": {
+      "status": "Feito",
+      "title": "Criar ProducaoItem"
+    },
+    "1189": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemEntity"
+    },
+    "1190": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItem Domain"
+    },
+    "1191": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemDTO"
+    },
+    "1192": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemMapperEntity"
+    },
+    "1193": {
+      "status": "Feito",
+      "title": "Criar o ProducaoMapperDTO"
+    },
+    "1194": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemRepository"
+    },
+    "1195": {
+      "status": "Feito",
+      "title": "Criar o ProcessoCreateUseCase"
+    },
+    "1196": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemFindByIdUseCase"
+    },
+    "1197": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemDeleteUseCase"
+    },
+    "1198": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemUpdateUseCase"
+    },
+    "1199": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemFIndByCriteriaUseCase"
+    },
+    "1200": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemRecursoAdapter"
+    },
+    "1201": {
+      "status": "Feito",
+      "title": "Criar o ProcessoItemController"
+    },
+    "1202": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemCreateUseCase"
+    },
+    "1203": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemFindByIdUseCase"
+    },
+    "1204": {
+      "status": "Feito",
+      "title": "Criar o ProducaoitemDeleteUseCase"
+    },
+    "1205": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemFindByCriteriaUseCase"
+    },
+    "1206": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemUpdateUseCase"
+    },
+    "1207": {
+      "status": "Feito",
+      "title": "Criar o ProduçãoItemAdapter"
+    },
+    "1208": {
+      "status": "Feito",
+      "title": "Criar o ProducaoItemController"
+    },
+    "1294": {
+      "status": "Feito",
+      "title": "Criar ContratoExtra"
+    },
+    "1295": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraEntity"
+    },
+    "1296": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtra Domain"
+    },
+    "1297": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraDTO"
+    },
+    "1298": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraMapperEntity"
+    },
+    "1299": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraMapperDTO"
+    },
+    "1300": {
+      "status": "Feito",
+      "title": "Criar ContratoExtraRepository"
+    },
+    "1301": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraCreateUseCase"
+    },
+    "1302": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraFindByIdUseCase"
+    },
+    "1303": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraDeleteUseCase"
+    },
+    "1304": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraFindByCriteriaUseCase"
+    },
+    "1305": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraUpdateUseCase"
+    },
+    "1306": {
+      "status": "Feito",
+      "title": "Criar o ContratoExtraAdapter"
+    },
+    "1307": {
+      "status": "Feito",
+      "title": "Criar ContratoExtraController"
+    },
+    "1308": {
+      "status": "Feito",
+      "title": "Criar ContratoItem"
+    },
+    "1309": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemEntity"
+    },
+    "1310": {
+      "status": "Feito",
+      "title": "Criar o ContratoItem Domain"
+    },
+    "1311": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemDTO"
+    },
+    "1312": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemMapperEntity"
+    },
+    "1313": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemMapperDTO"
+    },
+    "1314": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemRepository"
+    },
+    "1315": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemCreateUseCase"
+    },
+    "1316": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemFindByIdUseCase"
+    },
+    "1317": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemDeleteUseCase"
+    },
+    "1318": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemFindByCriteriaUseCase"
+    },
+    "1319": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemUpdateUseCase"
+    },
+    "1320": {
+      "status": "Feito",
+      "title": "Criar o ContratoAdapter"
+    },
+    "1321": {
+      "status": "Feito",
+      "title": "Criar o ContratoItemController"
+    },
+    "1322": {
+      "status": "Feito",
+      "title": "Criar Contrato"
+    },
+    "1323": {
+      "status": "Feito",
+      "title": "Criar o ContratoEntity"
+    },
+    "1324": {
+      "status": "Feito",
+      "title": "Criar o Contrato Domain"
+    },
+    "1325": {
+      "status": "Feito",
+      "title": "Criar o ContratoDTO"
+    },
+    "1326": {
+      "status": "Feito",
+      "title": "Criar o ContratoMapperEntity"
+    },
+    "1327": {
+      "status": "Feito",
+      "title": "Criar o ContratoMapperDTO"
+    },
+    "1328": {
+      "status": "Feito",
+      "title": "Criar o ContratoRepository"
+    },
+    "1329": {
+      "status": "Feito",
+      "title": "Criar o ContratoCreateUseCase"
+    },
+    "1330": {
+      "status": "Feito",
+      "title": "Criar o ContratoFindByIdUseCase"
+    },
+    "1331": {
+      "status": "Feito",
+      "title": "Criar o ContratoDeleteUseCase"
+    },
+    "1332": {
+      "status": "Feito",
+      "title": "Criar o ContratoFindByCriteriaUseCase"
+    },
+    "1333": {
+      "status": "Feito",
+      "title": "Criar o ContratoUpdateUseCase"
+    },
+    "1334": {
+      "status": "Feito",
+      "title": "Criar o ContratoAdapter"
+    },
+    "1335": {
+      "status": "Feito",
+      "title": "Criar o ContratoController"
+    },
+    "1412": {
+      "status": "Feito",
+      "title": "Implementar funcionalidades do TituloRepository"
+    },
+    "1413": {
+      "status": "Feito",
+      "title": "Criar o BanrisulWebhookController"
+    },
+    "1414": {
+      "status": "Feito",
+      "title": "Criar o BanrisulWebhookRequest"
+    },
+    "1415": {
+      "status": "Feito",
+      "title": "Criar o BBWebhookController"
+    },
+    "1416": {
+      "status": "Feito",
+      "title": "Criar o BBWebhookRequest"
+    },
+    "1417": {
+      "status": "Feito",
+      "title": "Criar o BradescoWebhookController"
+    },
+    "1418": {
+      "status": "Feito",
+      "title": "Criar o BradescoWebhookRequest"
+    },
+    "1419": {
+      "status": "Feito",
+      "title": "Criar o BtgWebhookController"
+    },
+    "1420": {
+      "status": "Feito",
+      "title": "Criar o BtgWebhookRequest"
+    },
+    "1421": {
+      "status": "Feito",
+      "title": "Criar o C6WebhookController"
+    },
+    "1422": {
+      "status": "Feito",
+      "title": "Criar o C6WebhookRequest"
+    },
+    "1423": {
+      "status": "Feito",
+      "title": "Criar o CartosWebhookController"
+    },
+    "1424": {
+      "status": "Feito",
+      "title": "Criar o CartosWebhookRequest"
+    },
+    "1425": {
+      "status": "Feito",
+      "title": "Criar o SicrediWebhookController"
+    },
+    "1426": {
+      "status": "Feito",
+      "title": "Criar o SicrediWebhookRequest"
+    },
+    "1427": {
+      "status": "Feito",
+      "title": "Criar o SicoobWebhookController"
+    },
+    "1428": {
+      "status": "Feito",
+      "title": "Criar o SicoobWebhookRequest"
+    },
+    "1430": {
+      "status": "Feito",
+      "title": "Criar o WebhookOrigemValidaService"
+    },
+    "1431": {
+      "status": "Feito",
+      "title": "Criar o WebhookCobrancaAdapter"
+    },
+    "1433": {
+      "status": "Feito",
+      "title": "Criar o SincronizarTituloUseCase"
+    },
+    "1435": {
+      "status": "Feito",
+      "title": "Criar o LiquidarTituloService"
+    },
+    "1436": {
+      "status": "Feito",
+      "title": "Criar o TituloEventoFactory"
+    },
+    "1446": {
+      "status": "Feito",
+      "title": "NullPointer ao buscar por PDFBoleto"
+    },
+    "1447": {
+      "status": "Feito",
+      "title": "Modificar tipo Log ao erro de enviar boleto"
+    },
+    "1461": {
+      "status": "Feito",
+      "title": "Renomear Buscar Movimentações Detalhadas"
+    },
+    "1462": {
+      "status": "Feito",
+      "title": "Modificar buscade token em IT"
+    },
+    "1478": {
+      "status": "Feito",
+      "title": "Remover interface IFind"
+    },
+    "1482": {
+      "status": "Feito",
+      "title": "Criar filtros de multiplas permissões"
+    },
+    "1483": {
+      "status": "Feito",
+      "title": "Modificar permissões em LegacyController"
+    },
+    "1519": {
+      "status": "Feito",
+      "title": "NPE em GerarPermissoesUseCase"
+    },
+    "1532": {
+      "status": "Aguardando PR",
+      "title": "Criar entidade Condicional"
+    },
+    "1538": {
+      "status": "Feito",
+      "title": "NullPointerException em PdfTituloBeforeExecuteLoad"
+    },
+    "1539": {
+      "status": "Feito",
+      "title": "Adicionar o campo tenantId no RefreshTokenClaimVO"
+    },
+    "1540": {
+      "status": "Feito",
+      "title": "Remover campos do Pedido"
+    },
+    "1550": {
+      "status": "Feito",
+      "title": "Adicionar AccessChannel nos Tokens"
+    },
+    "1551": {
+      "status": "Feito",
+      "title": "Permitir acessar Tenant com acesso Root"
+    },
+    "1552": {
+      "status": "Aguardando PR",
+      "title": "Adicionar carregamento de tenant ao login por RefreshToken"
+    },
+    "1553": {
+      "status": "Feito",
+      "title": "Add novas permissões para Root"
+    }
+  },
+  "transitions": [
+    {
+      "issueNumber": 1077,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1154,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1124,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1125,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1126,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1127,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1128,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1129,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1130,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1131,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1132,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1133,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1134,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1135,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1136,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1137,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1155,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1156,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1157,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1158,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1159,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1160,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1174,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1175,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1176,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1177,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1178,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1179,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1180,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1181,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1182,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1183,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1184,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1185,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1186,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1187,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1188,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1189,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1190,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1191,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1192,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1193,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1194,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1195,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1196,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1197,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1198,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1199,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1200,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1201,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1202,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1203,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1204,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1205,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1206,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1207,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1208,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1294,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1295,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1296,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1297,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1298,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1299,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1300,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1301,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1302,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1303,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1304,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1305,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1306,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1307,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1308,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1309,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1310,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1311,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1312,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1313,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1314,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1315,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1316,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1317,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1318,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1319,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1320,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1321,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1322,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1323,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1324,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1325,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1326,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1327,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1328,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1329,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1330,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1331,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1332,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1333,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1334,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1335,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1412,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1413,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1414,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1415,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1416,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1417,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1418,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1419,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1420,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1421,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1422,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1423,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1424,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1425,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1426,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1427,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1428,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1430,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1431,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1433,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1435,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1436,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1482,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1446,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1447,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1461,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1462,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1478,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1483,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1519,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1532,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1538,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1539,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1540,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1550,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1551,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1552,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-23T11:41:30.774Z"
+    },
+    {
+      "issueNumber": 1553,
+      "toStatus": "Feito",
+      "at": "2026-09-23T11:41:30.774Z"
+    }
+  ]
 }
