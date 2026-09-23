@@ -58,11 +58,13 @@ commitar o snapshot de volta — isso já está declarado no
 `hourly-snapshot.yml`, não precisa configurar nada extra além dos secrets
 acima.
 
-### 4. Ajustar nomes de status ou expediente (se necessário)
+### 4. Ajustar nomes de status, expediente ou o logo (se necessário)
 Em `src/config.js`, o objeto `STATUS` espera os nomes exatos do seu board
 (`"A Fazer"`, `"Em progresso"`, `"Aguardando PR"`, `"Feito"`). Em
 `src/business-hours.js`, o array `WORK_WINDOWS` define o expediente — ajuste
-se o horário de trabalho mudar.
+se o horário de trabalho mudar. Pra trocar o logo que aparece no topo do
+e-mail, basta substituir `assets/logo.png` por outra imagem com o mesmo
+nome (o ideal é algo quadrado, pequeno, tipo 64x64px ou 128x128px).
 
 ### 5. Testar localmente
 ```

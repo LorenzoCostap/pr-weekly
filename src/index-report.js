@@ -31,7 +31,8 @@ async function main() {
       appPassword: process.env.GMAIL_APP_PASSWORD,
       to: process.env.BOSS_EMAIL,
     },
-    rows
+    rows,
+    { start, end }
   );
 
   console.log(`Relatório enviado com ${rows.length} task(s).`);
