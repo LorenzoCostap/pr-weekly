@@ -565,8 +565,12 @@
       "title": "Colocar TenantId no AuthorizationCode"
     },
     "1577": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Criar a classe ResolverUsuarioAuthCodeService"
+    },
+    "1583": {
+      "status": "A Fazer",
+      "title": "Adicionar PartParam no AccessToken"
     }
   },
   "transitions": [
@@ -1315,6 +1319,17 @@
       "issueNumber": 1577,
       "toStatus": "A Fazer",
       "at": "2026-09-24T19:32:07.863Z"
+    },
+    {
+      "issueNumber": 1577,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-24T22:03:20.969Z"
+    },
+    {
+      "issueNumber": 1583,
+      "toStatus": "A Fazer",
+      "at": "2026-09-24T22:03:20.969Z"
     }
   ]
 }
