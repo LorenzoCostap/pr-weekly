@@ -549,7 +549,7 @@
       "title": "Add novas permissões para Root"
     },
     "1573": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Criar novo AccessChannel"
     },
     "1574": {
@@ -557,8 +557,12 @@
       "title": "Restringir acesso a usuarios tipo `API`"
     },
     "1575": {
-      "status": "Em Progresso",
+      "status": "Feito",
       "title": "Modificar como o AccessChannel é pego no login com RefreshToken"
+    },
+    "1576": {
+      "status": "A Fazer",
+      "title": "Colocar TenantId no AuthorizationCode"
     }
   },
   "transitions": [
@@ -1273,6 +1277,23 @@
       "issueNumber": 1575,
       "toStatus": "Em Progresso",
       "at": "2026-09-24T13:19:53.107Z"
+    },
+    {
+      "issueNumber": 1573,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-24T18:17:13.278Z"
+    },
+    {
+      "issueNumber": 1575,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Feito",
+      "at": "2026-09-24T18:17:13.278Z"
+    },
+    {
+      "issueNumber": 1576,
+      "toStatus": "A Fazer",
+      "at": "2026-09-24T18:17:13.278Z"
     }
   ]
 }
