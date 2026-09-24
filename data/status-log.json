@@ -553,7 +553,7 @@
       "title": "Criar novo AccessChannel"
     },
     "1574": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Restringir acesso a usuarios tipo `API`"
     },
     "1575": {
@@ -561,8 +561,12 @@
       "title": "Modificar como o AccessChannel é pego no login com RefreshToken"
     },
     "1576": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Colocar TenantId no AuthorizationCode"
+    },
+    "1577": {
+      "status": "A Fazer",
+      "title": "Criar a classe ResolverUsuarioAuthCodeService"
     }
   },
   "transitions": [
@@ -1294,6 +1298,23 @@
       "issueNumber": 1576,
       "toStatus": "A Fazer",
       "at": "2026-09-24T18:17:13.278Z"
+    },
+    {
+      "issueNumber": 1574,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-24T19:32:07.863Z"
+    },
+    {
+      "issueNumber": 1576,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-24T19:32:07.863Z"
+    },
+    {
+      "issueNumber": 1577,
+      "toStatus": "A Fazer",
+      "at": "2026-09-24T19:32:07.863Z"
     }
   ]
 }
