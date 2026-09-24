@@ -553,8 +553,12 @@
       "title": "Criar novo AccessChannel"
     },
     "1574": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Restringir acesso a usuarios tipo `API`"
+    },
+    "1575": {
+      "status": "Em Progresso",
+      "title": "Modificar como o AccessChannel é pego no login com RefreshToken"
     }
   },
   "transitions": [
@@ -1258,6 +1262,17 @@
       "issueNumber": 1574,
       "toStatus": "A Fazer",
       "at": "2026-09-23T22:06:38.285Z"
+    },
+    {
+      "issueNumber": 1574,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-24T13:19:53.107Z"
+    },
+    {
+      "issueNumber": 1575,
+      "toStatus": "Em Progresso",
+      "at": "2026-09-24T13:19:53.107Z"
     }
   ]
 }
