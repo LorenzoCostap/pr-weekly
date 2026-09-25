@@ -517,7 +517,7 @@
       "title": "NPE em GerarPermissoesUseCase"
     },
     "1532": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Criar entidade Condicional"
     },
     "1538": {
@@ -561,11 +561,11 @@
       "title": "Modificar como o AccessChannel é pego no login com RefreshToken"
     },
     "1576": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Colocar TenantId no AuthorizationCode"
     },
     "1577": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Criar a classe ResolverUsuarioAuthCodeService"
     },
     "1583": {
@@ -1336,6 +1336,24 @@
       "fromStatus": "A Fazer",
       "toStatus": "Aguardando PR",
       "at": "2026-09-25T13:19:57.970Z"
+    },
+    {
+      "issueNumber": 1532,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-25T18:16:50.224Z"
+    },
+    {
+      "issueNumber": 1576,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-25T18:16:50.224Z"
+    },
+    {
+      "issueNumber": 1577,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-25T18:16:50.224Z"
     }
   ]
 }
