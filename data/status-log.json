@@ -572,6 +572,10 @@
       "status": "Feito",
       "title": "Adicionar PartParam no AccessToken"
     },
+    "1593": {
+      "status": "Aguardando PR",
+      "title": "Retonar 409 quando tivermos erro de Concorrencia."
+    },
     "1598": {
       "status": "Aguardando PR",
       "title": "Criar Ordem de Compra"
@@ -1375,6 +1379,11 @@
       "fromStatus": "Em Progresso",
       "toStatus": "Aguardando PR",
       "at": "2026-09-28T18:41:36.260Z"
+    },
+    {
+      "issueNumber": 1593,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-28T21:38:17.556Z"
     }
   ]
 }
