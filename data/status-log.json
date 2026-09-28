@@ -569,8 +569,12 @@
       "title": "Criar a classe ResolverUsuarioAuthCodeService"
     },
     "1583": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Adicionar PartParam no AccessToken"
+    },
+    "1598": {
+      "status": "Em Progresso",
+      "title": "Criar Ordem de Compra"
     }
   },
   "transitions": [
@@ -1354,6 +1358,17 @@
       "fromStatus": "Aguardando PR",
       "toStatus": "Feito",
       "at": "2026-09-25T18:16:50.224Z"
+    },
+    {
+      "issueNumber": 1598,
+      "toStatus": "Em Progresso",
+      "at": "2026-09-28T15:01:55.477Z"
+    },
+    {
+      "issueNumber": 1583,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-28T15:01:55.477Z"
     }
   ]
 }
