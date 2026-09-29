@@ -579,6 +579,10 @@
     "1598": {
       "status": "Aguardando PR",
       "title": "Criar Ordem de Compra"
+    },
+    "1602": {
+      "status": "A Fazer",
+      "title": "Aprimorar testes de Comerciais"
     }
   },
   "transitions": [
@@ -1390,6 +1394,11 @@
       "fromStatus": "Aguardando PR",
       "toStatus": "Feito",
       "at": "2026-09-29T11:23:13.880Z"
+    },
+    {
+      "issueNumber": 1602,
+      "toStatus": "A Fazer",
+      "at": "2026-09-29T14:48:49.606Z"
     }
   ]
 }
