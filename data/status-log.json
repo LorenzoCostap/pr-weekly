@@ -577,12 +577,20 @@
       "title": "Retonar 409 quando tivermos erro de Concorrencia."
     },
     "1598": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Criar Ordem de Compra"
     },
     "1602": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Comerciais"
+    },
+    "1603": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Contabeis"
+    },
+    "1604": {
+      "status": "Em Progresso",
+      "title": "Aprimorar testes de Contratos"
     }
   },
   "transitions": [
@@ -1399,6 +1407,28 @@
       "issueNumber": 1602,
       "toStatus": "A Fazer",
       "at": "2026-09-29T14:48:49.606Z"
+    },
+    {
+      "issueNumber": 1598,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-29T19:50:10.472Z"
+    },
+    {
+      "issueNumber": 1602,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-29T19:50:10.472Z"
+    },
+    {
+      "issueNumber": 1603,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-29T19:50:10.472Z"
+    },
+    {
+      "issueNumber": 1604,
+      "toStatus": "Em Progresso",
+      "at": "2026-09-29T19:50:10.472Z"
     }
   ]
 }
