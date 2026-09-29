@@ -589,8 +589,16 @@
       "title": "Aprimorar testes de Contabeis"
     },
     "1604": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Contratos"
+    },
+    "1605": {
+      "status": "Em Progresso",
+      "title": "Aprimorar testes de Dfes"
+    },
+    "1606": {
+      "status": "A Fazer",
+      "title": "Aprimorar testes de Estoques"
     }
   },
   "transitions": [
@@ -1429,6 +1437,22 @@
       "issueNumber": 1604,
       "toStatus": "Em Progresso",
       "at": "2026-09-29T19:50:10.472Z"
+    },
+    {
+      "issueNumber": 1604,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-29T23:30:28.945Z"
+    },
+    {
+      "issueNumber": 1605,
+      "toStatus": "Em Progresso",
+      "at": "2026-09-29T23:30:28.945Z"
+    },
+    {
+      "issueNumber": 1606,
+      "toStatus": "A Fazer",
+      "at": "2026-09-29T23:30:28.945Z"
     }
   ]
 }
