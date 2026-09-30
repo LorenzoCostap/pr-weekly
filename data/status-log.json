@@ -593,12 +593,20 @@
       "title": "Aprimorar testes de Contratos"
     },
     "1605": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Dfes"
     },
     "1606": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Estoques"
+    },
+    "1607": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Financeiros Parte 1"
+    },
+    "1619": {
+      "status": "Em Progresso",
+      "title": "Aprimorar testes de Financeiros Parte 2"
     }
   },
   "transitions": [
@@ -1453,6 +1461,28 @@
       "issueNumber": 1606,
       "toStatus": "A Fazer",
       "at": "2026-09-29T23:30:28.945Z"
+    },
+    {
+      "issueNumber": 1605,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-30T16:45:57.839Z"
+    },
+    {
+      "issueNumber": 1606,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-30T16:45:57.839Z"
+    },
+    {
+      "issueNumber": 1607,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-30T16:45:57.839Z"
+    },
+    {
+      "issueNumber": 1619,
+      "toStatus": "Em Progresso",
+      "at": "2026-09-30T16:45:57.839Z"
     }
   ]
 }
