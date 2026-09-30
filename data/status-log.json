@@ -589,7 +589,7 @@
       "title": "Aprimorar testes de Contabeis"
     },
     "1604": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Contratos"
     },
     "1605": {
@@ -601,12 +601,20 @@
       "title": "Aprimorar testes de Estoques"
     },
     "1607": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Financeiros Parte 1"
     },
+    "1608": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Geograficos"
+    },
     "1619": {
-      "status": "Em Progresso",
+      "status": "Feito",
       "title": "Aprimorar testes de Financeiros Parte 2"
+    },
+    "1620": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Financeiros Parte 3"
     }
   },
   "transitions": [
@@ -1483,6 +1491,34 @@
       "issueNumber": 1619,
       "toStatus": "Em Progresso",
       "at": "2026-09-30T16:45:57.839Z"
+    },
+    {
+      "issueNumber": 1604,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-30T21:16:50.424Z"
+    },
+    {
+      "issueNumber": 1607,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-09-30T21:16:50.424Z"
+    },
+    {
+      "issueNumber": 1619,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Feito",
+      "at": "2026-09-30T21:16:50.424Z"
+    },
+    {
+      "issueNumber": 1620,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-30T21:16:50.424Z"
+    },
+    {
+      "issueNumber": 1608,
+      "toStatus": "Aguardando PR",
+      "at": "2026-09-30T21:16:50.424Z"
     }
   ]
 }
