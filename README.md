@@ -20,13 +20,28 @@ passado. A frequência é de hora em hora (não diária) porque boa parte das
 tasks é resolvida em horas ou minutos — um snapshot diário perderia esse
 tipo de mudança rápida quase todas as vezes.
 
-## Horas úteis, não horas corridas
+## Formato do e-mail: cards, não tabela
 
-O tempo de cada task (`Dev`, `Review`, `pós-alteração`) é calculado somando
-só o que cai dentro do **expediente**: segunda a sexta, 08:00–11:45 e
-13:15–18:00 (horário de Brasília). Isso vale pra qualquer intervalo, mesmo
-que ele atravesse a noite, o almoço ou o fim de semana — só a parte dentro
-do expediente conta. Essa regra está isolada em `src/business-hours.js`.
+Cada task vira um card, agrupado em 3 seções por prioridade:
+1. **⚠️ Voltaram pra alteração** — sempre primeiro, é o que mais importa.
+   Cada card lista **todas** as rodadas de pedido de alteração (não só a
+   primeira), com o nome de quem revisou e o comentário de cada rodada.
+2. **⏳ Aguardando revisão** — ainda não teve review.
+3. **✅ Concluídas direto** — sem nenhum pedido de alteração.
+
+Uma PR com 4 rodadas de "changes requested" aparece com "Rodada 1", "Rodada
+2", etc., cada uma com quem pediu e o que foi pedido — isso vem do
+`body` da review na API do GitHub, não é inferido.
+
+## Horas úteis (calculadas, mas não aparecem no e-mail)
+
+O tempo de cada task (`Dev`, `Review`, `pós-alteração`) ainda é calculado
+internamente, somando só o que cai dentro do **expediente**: segunda a
+sexta, 08:00–11:45 e 13:15–18:00 (horário de Brasília) — mas por pedido, o
+e-mail não mostra mais essas colunas, só o status e o motivo da alteração.
+Os números continuam disponíveis em cada linha de `rows` (em
+`src/metrics.js`), caso queira reativar a exibição um dia. Essa regra de
+expediente está isolada em `src/business-hours.js`.
 
 ## Setup
 
@@ -81,6 +96,17 @@ Depois do push:
    menos duas fotos pra detectar uma transição.
 2. Rode o `weekly-report.yml` manualmente uma vez pra conferir o e-mail
    antes de deixar o cron rodar sozinho.
+
+## Um detalhe importante do snapshot: primeira observação ≠ transição
+
+Quando o `hourly-snapshot.yml` vê uma task pela primeira vez, ele grava o
+status atual dela, mas **isso não conta como "ela mudou de status agora"**
+— é só o ponto de partida da contagem. Isso já causou um bug real: tasks
+antigas, já prontas há meses, apareciam como "concluídas essa semana" só
+porque o snapshot as viu pela primeira vez dentro da janela do relatório.
+A correção está em `src/metrics.js`: só conta como "foi pra Feito" uma
+transição que tem `fromStatus` (ou seja, veio de um status conhecido
+anteriormente) — a primeira observação nunca tem `fromStatus`.
 
 ## Limitações conhecidas (fora do escopo atual)
 - Considera apenas **um** repositório do GitHub e **um** Project.

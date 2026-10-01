@@ -61,4 +61,21 @@ console.log(rows);
 console.assert(rows[0].postChangeHours === 8.5, "postChangeHours incorreto");
 console.assert(rows[0].hadChangesRequested === true, "hadChangesRequested incorreto");
 
+// Bug real que encontramos: uma task ANTIGA, que já estava "Feito" há meses,
+// mas que o snapshot só viu pela primeira vez agora (dentro da janela), não
+// deveria contar como "concluída essa semana" — ela só tem uma observação
+// (sem fromStatus), não uma transição de verdade.
+let oldTaskLog = { lastSnapshot: {}, transitions: [] };
+oldTaskLog = detectTransitions(
+  oldTaskLog,
+  [{ issueNumber: 9999, title: "Task antiga, já pronta há meses", status: STATUS.done }],
+  new Date("2026-09-20T21:00:00Z") // dentro da janela de teste (start..end acima)
+);
+const oldTaskIssues = selectReportIssues(oldTaskLog, { start, end });
+console.assert(
+  oldTaskIssues.length === 0,
+  "task antiga vista pela 1ª vez não deveria aparecer no relatório (bug dos 144)"
+);
+console.log("Task antiga corretamente EXCLUÍDA do relatório:", oldTaskIssues.length === 0);
+
 console.log("\nTodos os asserts passaram (nenhuma falha 'Assertion failed' acima).");

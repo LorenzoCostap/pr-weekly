@@ -44,9 +44,18 @@ export async function findPRsForIssues(token, { owner, repo, author, issueNumber
       url: pr.html_url,
       mergedAt: pr.merged_at ? new Date(pr.merged_at) : null,
       hadChangesRequested: changeRequests.length > 0,
+      // tempo pós-alteração continua medido a partir da 1ª rodada — é o
+      // tempo total gasto nas idas e voltas, até o merge final.
       firstChangesRequestedAt: changeRequests[0]
         ? new Date(changeRequests[0].submitted_at)
         : null,
+      // mas o motivo guarda TODAS as rodadas, em ordem — uma PR difícil
+      // pode ter 3-4 pedidos de alteração diferentes.
+      changeRequests: changeRequests.map((r) => ({
+        at: new Date(r.submitted_at),
+        reason: r.body?.trim() || null,
+        reviewer: r.user?.login ?? null,
+      })),
     });
   }
 

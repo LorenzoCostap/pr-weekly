@@ -15,8 +15,11 @@ export function selectReportIssues(log, { start, end }) {
       .filter((t) => t.issueNumber === issueNumber)
       .sort((a, b) => new Date(a.at) - new Date(b.at));
 
+    // t.fromStatus só existe em transições de verdade (status A -> status B).
+    // A primeira observação de uma task não tem fromStatus — é só o ponto de
+    // partida da contagem, não significa que ela "virou Feito agora".
     const movedToDoneInWindow = transitions.some(
-      (t) => t.toStatus === STATUS.done && new Date(t.at) >= start && new Date(t.at) <= end
+      (t) => t.fromStatus && t.toStatus === STATUS.done && new Date(t.at) >= start && new Date(t.at) <= end
     );
     const isWaitingNow = snapshot.status === STATUS.waitingPR;
 
@@ -75,6 +78,7 @@ export function buildReport(issues, prsByIssueNumber) {
       reviewHours,
       hadChangesRequested: pr?.hadChangesRequested ?? null,
       postChangeHours,
+      changeReasons: pr?.changeRequests ?? [],
       prUrl: pr?.url ?? null,
     };
   });
