@@ -581,11 +581,11 @@
       "title": "Criar Ordem de Compra"
     },
     "1602": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Comerciais"
     },
     "1603": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Contabeis"
     },
     "1604": {
@@ -597,7 +597,7 @@
       "title": "Aprimorar testes de Dfes"
     },
     "1606": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Estoques"
     },
     "1607": {
@@ -605,15 +605,23 @@
       "title": "Aprimorar testes de Financeiros Parte 1"
     },
     "1608": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Geograficos"
+    },
+    "1609": {
+      "status": "A Fazer",
+      "title": "Aprimorar testes de Identidades"
+    },
+    "1610": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Itens"
     },
     "1619": {
       "status": "Feito",
       "title": "Aprimorar testes de Financeiros Parte 2"
     },
     "1620": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Financeiros Parte 3"
     }
   },
@@ -1519,6 +1527,46 @@
       "issueNumber": 1608,
       "toStatus": "Aguardando PR",
       "at": "2026-09-30T21:16:50.424Z"
+    },
+    {
+      "issueNumber": 1602,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-01T16:04:21.184Z"
+    },
+    {
+      "issueNumber": 1603,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-01T16:04:21.184Z"
+    },
+    {
+      "issueNumber": 1606,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-01T16:04:21.184Z"
+    },
+    {
+      "issueNumber": 1620,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-01T16:04:21.184Z"
+    },
+    {
+      "issueNumber": 1608,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-01T16:04:21.184Z"
+    },
+    {
+      "issueNumber": 1609,
+      "toStatus": "A Fazer",
+      "at": "2026-10-01T16:04:21.184Z"
+    },
+    {
+      "issueNumber": 1610,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-01T16:04:21.184Z"
     }
   ]
 }
