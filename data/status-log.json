@@ -593,7 +593,7 @@
       "title": "Aprimorar testes de Contratos"
     },
     "1605": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Dfes"
     },
     "1606": {
@@ -609,12 +609,20 @@
       "title": "Aprimorar testes de Geograficos"
     },
     "1609": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Identidades"
     },
     "1610": {
       "status": "Aguardando PR",
       "title": "Aprimorar testes de Itens"
+    },
+    "1611": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Logistica"
+    },
+    "1612": {
+      "status": "Em Progresso",
+      "title": "Aprimorar testes de Mails"
     },
     "1619": {
       "status": "Feito",
@@ -1573,6 +1581,28 @@
       "fromStatus": "A Fazer",
       "toStatus": "Em Progresso",
       "at": "2026-10-01T17:32:55.433Z"
+    },
+    {
+      "issueNumber": 1605,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-01T21:36:36.482Z"
+    },
+    {
+      "issueNumber": 1609,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-01T21:36:36.482Z"
+    },
+    {
+      "issueNumber": 1611,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-01T21:36:36.482Z"
+    },
+    {
+      "issueNumber": 1612,
+      "toStatus": "Em Progresso",
+      "at": "2026-10-01T21:36:36.482Z"
     }
   ]
 }
