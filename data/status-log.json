@@ -621,8 +621,12 @@
       "title": "Aprimorar testes de Logistica"
     },
     "1612": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Mails"
+    },
+    "1615": {
+      "status": "Aguardando PR",
+      "title": "Aprimorar testes de Pcpcs"
     },
     "1619": {
       "status": "Feito",
@@ -1603,6 +1607,17 @@
       "issueNumber": 1612,
       "toStatus": "Em Progresso",
       "at": "2026-10-01T21:36:36.482Z"
+    },
+    {
+      "issueNumber": 1612,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-02T15:28:17.738Z"
+    },
+    {
+      "issueNumber": 1615,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-02T15:28:17.738Z"
     }
   ]
 }
