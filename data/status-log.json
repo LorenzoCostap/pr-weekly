@@ -609,24 +609,32 @@
       "title": "Aprimorar testes de Geograficos"
     },
     "1609": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Identidades"
     },
     "1610": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Itens"
     },
     "1611": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Logistica"
     },
     "1612": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Mails"
     },
     "1615": {
       "status": "Aguardando PR",
       "title": "Aprimorar testes de Pcpcs"
+    },
+    "1616": {
+      "status": "Em Progresso",
+      "title": "Aprimorar testes de Pedidos"
+    },
+    "1617": {
+      "status": "A Fazer",
+      "title": "Aprimorar testes de Tabelas"
     },
     "1619": {
       "status": "Feito",
@@ -1618,6 +1626,40 @@
       "issueNumber": 1615,
       "toStatus": "Aguardando PR",
       "at": "2026-10-02T15:28:17.738Z"
+    },
+    {
+      "issueNumber": 1609,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-02T20:24:56.487Z"
+    },
+    {
+      "issueNumber": 1610,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-02T20:24:56.487Z"
+    },
+    {
+      "issueNumber": 1611,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-02T20:24:56.487Z"
+    },
+    {
+      "issueNumber": 1612,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-02T20:24:56.487Z"
+    },
+    {
+      "issueNumber": 1616,
+      "toStatus": "Em Progresso",
+      "at": "2026-10-02T20:24:56.487Z"
+    },
+    {
+      "issueNumber": 1617,
+      "toStatus": "A Fazer",
+      "at": "2026-10-02T20:24:56.487Z"
     }
   ]
 }
