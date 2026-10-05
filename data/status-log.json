@@ -624,17 +624,25 @@
       "status": "Feito",
       "title": "Aprimorar testes de Mails"
     },
+    "1613": {
+      "status": "Em Progresso",
+      "title": "Aprimorar testes de Master"
+    },
     "1615": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Pcpcs"
     },
     "1616": {
-      "status": "Em Progresso",
+      "status": "Feito",
       "title": "Aprimorar testes de Pedidos"
     },
     "1617": {
-      "status": "A Fazer",
+      "status": "Feito",
       "title": "Aprimorar testes de Tabelas"
+    },
+    "1618": {
+      "status": "A Fazer",
+      "title": "Aprimorar testes de Comuns"
     },
     "1619": {
       "status": "Feito",
@@ -643,6 +651,18 @@
     "1620": {
       "status": "Feito",
       "title": "Aprimorar testes de Financeiros Parte 3"
+    },
+    "1624": {
+      "status": "A Fazer",
+      "title": "Aprimorar testes de exceptions"
+    },
+    "1642": {
+      "status": "A Fazer",
+      "title": "Remover Construtores inúteis do GrupoTributario"
+    },
+    "1643": {
+      "status": "A Fazer",
+      "title": "Remover construtores inúteis do Indicador"
     }
   },
   "transitions": [
@@ -1660,6 +1680,49 @@
       "issueNumber": 1617,
       "toStatus": "A Fazer",
       "at": "2026-10-02T20:24:56.487Z"
+    },
+    {
+      "issueNumber": 1613,
+      "toStatus": "Em Progresso",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1615,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1616,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Feito",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1617,
+      "fromStatus": "A Fazer",
+      "toStatus": "Feito",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1618,
+      "toStatus": "A Fazer",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1624,
+      "toStatus": "A Fazer",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1642,
+      "toStatus": "A Fazer",
+      "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1643,
+      "toStatus": "A Fazer",
+      "at": "2026-10-05T18:01:49.520Z"
     }
   ]
 }
