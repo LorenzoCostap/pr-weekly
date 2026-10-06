@@ -625,7 +625,7 @@
       "title": "Aprimorar testes de Mails"
     },
     "1613": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Master"
     },
     "1615": {
@@ -641,7 +641,7 @@
       "title": "Aprimorar testes de Tabelas"
     },
     "1618": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de Comuns"
     },
     "1619": {
@@ -653,7 +653,7 @@
       "title": "Aprimorar testes de Financeiros Parte 3"
     },
     "1624": {
-      "status": "A Fazer",
+      "status": "Em Progresso",
       "title": "Aprimorar testes de exceptions"
     },
     "1642": {
@@ -1723,6 +1723,24 @@
       "issueNumber": 1643,
       "toStatus": "A Fazer",
       "at": "2026-10-05T18:01:49.520Z"
+    },
+    {
+      "issueNumber": 1613,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-06T00:37:52.392Z"
+    },
+    {
+      "issueNumber": 1618,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-06T00:37:52.392Z"
+    },
+    {
+      "issueNumber": 1624,
+      "fromStatus": "A Fazer",
+      "toStatus": "Em Progresso",
+      "at": "2026-10-06T00:37:52.392Z"
     }
   ]
 }
