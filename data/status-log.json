@@ -665,12 +665,20 @@
       "title": "Remover construtores inúteis do Indicador"
     },
     "1654": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Refatorar validações de UseCase do ItemGrupo"
     },
     "1655": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Refatorar validações de UseCase do InstruçãoBancária"
+    },
+    "1656": {
+      "status": "Aguardando PR",
+      "title": "Refatorar validações de UseCase do ParticipanteGrupo"
+    },
+    "1657": {
+      "status": "Em Progresso",
+      "title": "Implementar validação de ItemValidaService.validaEstoqueEDepositos"
     }
   },
   "transitions": [
@@ -1777,6 +1785,28 @@
       "issueNumber": 1655,
       "toStatus": "A Fazer",
       "at": "2026-10-07T14:16:35.941Z"
+    },
+    {
+      "issueNumber": 1654,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-07T20:26:23.288Z"
+    },
+    {
+      "issueNumber": 1655,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-07T20:26:23.288Z"
+    },
+    {
+      "issueNumber": 1656,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-07T20:26:23.288Z"
+    },
+    {
+      "issueNumber": 1657,
+      "toStatus": "Em Progresso",
+      "at": "2026-10-07T20:26:23.288Z"
     }
   ]
 }
