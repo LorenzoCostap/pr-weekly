@@ -653,16 +653,24 @@
       "title": "Aprimorar testes de Financeiros Parte 3"
     },
     "1624": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Aprimorar testes de exceptions"
     },
     "1642": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Remover Construtores inúteis do GrupoTributario"
     },
     "1643": {
-      "status": "A Fazer",
+      "status": "Aguardando PR",
       "title": "Remover construtores inúteis do Indicador"
+    },
+    "1654": {
+      "status": "Em Progresso",
+      "title": "Refatorar validações de UseCase do ItemGrupo"
+    },
+    "1655": {
+      "status": "A Fazer",
+      "title": "Refatorar validações de UseCase do InstruçãoBancária"
     }
   },
   "transitions": [
@@ -1741,6 +1749,34 @@
       "fromStatus": "A Fazer",
       "toStatus": "Em Progresso",
       "at": "2026-10-06T00:37:52.392Z"
+    },
+    {
+      "issueNumber": 1624,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-07T14:16:35.941Z"
+    },
+    {
+      "issueNumber": 1642,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-07T14:16:35.941Z"
+    },
+    {
+      "issueNumber": 1643,
+      "fromStatus": "A Fazer",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-07T14:16:35.941Z"
+    },
+    {
+      "issueNumber": 1654,
+      "toStatus": "Em Progresso",
+      "at": "2026-10-07T14:16:35.941Z"
+    },
+    {
+      "issueNumber": 1655,
+      "toStatus": "A Fazer",
+      "at": "2026-10-07T14:16:35.941Z"
     }
   ]
 }
