@@ -677,7 +677,7 @@
       "title": "Refatorar validações de UseCase do ParticipanteGrupo"
     },
     "1657": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Implementar validação de ItemValidaService.validaEstoqueEDepositos"
     }
   },
@@ -1807,6 +1807,12 @@
       "issueNumber": 1657,
       "toStatus": "Em Progresso",
       "at": "2026-10-07T20:26:23.288Z"
+    },
+    {
+      "issueNumber": 1657,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-08T00:45:18.240Z"
     }
   ]
 }
