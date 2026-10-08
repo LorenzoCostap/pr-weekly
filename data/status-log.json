@@ -641,7 +641,7 @@
       "title": "Aprimorar testes de Tabelas"
     },
     "1618": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Comuns"
     },
     "1619": {
@@ -653,19 +653,19 @@
       "title": "Aprimorar testes de Financeiros Parte 3"
     },
     "1624": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de exceptions"
     },
     "1642": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Remover Construtores inúteis do GrupoTributario"
     },
     "1643": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Remover construtores inúteis do Indicador"
     },
     "1654": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Refatorar validações de UseCase do ItemGrupo"
     },
     "1655": {
@@ -673,12 +673,20 @@
       "title": "Refatorar validações de UseCase do InstruçãoBancária"
     },
     "1656": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Refatorar validações de UseCase do ParticipanteGrupo"
     },
     "1657": {
       "status": "Aguardando PR",
       "title": "Implementar validação de ItemValidaService.validaEstoqueEDepositos"
+    },
+    "1658": {
+      "status": "Aguardando PR",
+      "title": "Implementar validação de ItemValidaService.validaItemNaoServico"
+    },
+    "1659": {
+      "status": "Em Progresso",
+      "title": "Implementar validação de ItemValidaService.validaCodigoBarras"
     }
   },
   "transitions": [
@@ -1813,6 +1821,52 @@
       "fromStatus": "Em Progresso",
       "toStatus": "Aguardando PR",
       "at": "2026-10-08T00:45:18.240Z"
+    },
+    {
+      "issueNumber": 1618,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1624,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1642,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1643,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1654,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1656,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1658,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1659,
+      "toStatus": "Em Progresso",
+      "at": "2026-10-08T15:17:44.859Z"
     }
   ]
 }
