@@ -625,7 +625,7 @@
       "title": "Aprimorar testes de Mails"
     },
     "1613": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Aprimorar testes de Master"
     },
     "1615": {
@@ -677,16 +677,24 @@
       "title": "Refatorar validações de UseCase do ParticipanteGrupo"
     },
     "1657": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Implementar validação de ItemValidaService.validaEstoqueEDepositos"
     },
     "1658": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Implementar validação de ItemValidaService.validaItemNaoServico"
     },
     "1659": {
-      "status": "Em Progresso",
+      "status": "Aguardando PR",
       "title": "Implementar validação de ItemValidaService.validaCodigoBarras"
+    },
+    "1660": {
+      "status": "Aguardando PR",
+      "title": "Implementar validação de ItemValidaService.validaExistenciaNcm"
+    },
+    "1661": {
+      "status": "Aguardando PR",
+      "title": "Implementar validação de ItemValidaService.preencheNatRecPorNcm"
     }
   },
   "transitions": [
@@ -1867,6 +1875,40 @@
       "issueNumber": 1659,
       "toStatus": "Em Progresso",
       "at": "2026-10-08T15:17:44.859Z"
+    },
+    {
+      "issueNumber": 1613,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T21:05:06.717Z"
+    },
+    {
+      "issueNumber": 1657,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T21:05:06.717Z"
+    },
+    {
+      "issueNumber": 1658,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-08T21:05:06.717Z"
+    },
+    {
+      "issueNumber": 1659,
+      "fromStatus": "Em Progresso",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-08T21:05:06.717Z"
+    },
+    {
+      "issueNumber": 1660,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-08T21:05:06.717Z"
+    },
+    {
+      "issueNumber": 1661,
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-08T21:05:06.717Z"
     }
   ]
 }
