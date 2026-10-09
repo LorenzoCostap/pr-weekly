@@ -685,15 +685,15 @@
       "title": "Implementar validação de ItemValidaService.validaItemNaoServico"
     },
     "1659": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Implementar validação de ItemValidaService.validaCodigoBarras"
     },
     "1660": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Implementar validação de ItemValidaService.validaExistenciaNcm"
     },
     "1661": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Implementar validação de ItemValidaService.preencheNatRecPorNcm"
     }
   },
@@ -1909,6 +1909,24 @@
       "issueNumber": 1661,
       "toStatus": "Aguardando PR",
       "at": "2026-10-08T21:05:06.717Z"
+    },
+    {
+      "issueNumber": 1659,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-09T15:52:27.879Z"
+    },
+    {
+      "issueNumber": 1660,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-09T15:52:27.879Z"
+    },
+    {
+      "issueNumber": 1661,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-09T15:52:27.879Z"
     }
   ]
 }
