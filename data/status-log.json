@@ -695,6 +695,18 @@
     "1661": {
       "status": "Feito",
       "title": "Implementar validação de ItemValidaService.preencheNatRecPorNcm"
+    },
+    "1708": {
+      "status": "Backlog",
+      "title": "Remover webservices do Pedido Item"
+    },
+    "1709": {
+      "status": "Backlog",
+      "title": "Atualizar pastas da Documentação"
+    },
+    "1710": {
+      "status": "Backlog",
+      "title": "Modificar AccessChannel padrao de entrada"
     }
   },
   "transitions": [
@@ -1927,6 +1939,21 @@
       "fromStatus": "Aguardando PR",
       "toStatus": "Feito",
       "at": "2026-10-09T15:52:27.879Z"
+    },
+    {
+      "issueNumber": 1708,
+      "toStatus": "Backlog",
+      "at": "2026-10-09T20:36:36.573Z"
+    },
+    {
+      "issueNumber": 1709,
+      "toStatus": "Backlog",
+      "at": "2026-10-09T20:36:36.573Z"
+    },
+    {
+      "issueNumber": 1710,
+      "toStatus": "Backlog",
+      "at": "2026-10-09T20:36:36.573Z"
     }
   ]
 }
