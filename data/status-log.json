@@ -669,7 +669,7 @@
       "title": "Refatorar validações de UseCase do ItemGrupo"
     },
     "1655": {
-      "status": "Aguardando PR",
+      "status": "Feito",
       "title": "Refatorar validações de UseCase do InstruçãoBancária"
     },
     "1656": {
@@ -1954,6 +1954,12 @@
       "issueNumber": 1710,
       "toStatus": "Backlog",
       "at": "2026-10-09T20:36:36.573Z"
+    },
+    {
+      "issueNumber": 1655,
+      "fromStatus": "Aguardando PR",
+      "toStatus": "Feito",
+      "at": "2026-10-10T00:31:21.581Z"
     }
   ]
 }
