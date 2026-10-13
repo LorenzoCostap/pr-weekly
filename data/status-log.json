@@ -696,16 +696,20 @@
       "status": "Feito",
       "title": "Implementar validação de ItemValidaService.preencheNatRecPorNcm"
     },
+    "1707": {
+      "status": "A Fazer",
+      "title": "Fazer webservices utilizando GraphQL"
+    },
     "1708": {
-      "status": "Backlog",
+      "status": "A Fazer",
       "title": "Remover webservices do Pedido Item"
     },
     "1709": {
-      "status": "Backlog",
+      "status": "Em Progresso",
       "title": "Atualizar pastas da Documentação"
     },
     "1710": {
-      "status": "Backlog",
+      "status": "Aguardando PR",
       "title": "Modificar AccessChannel padrao de entrada"
     }
   },
@@ -1960,6 +1964,29 @@
       "fromStatus": "Aguardando PR",
       "toStatus": "Feito",
       "at": "2026-10-10T00:31:21.581Z"
+    },
+    {
+      "issueNumber": 1707,
+      "toStatus": "A Fazer",
+      "at": "2026-10-13T17:59:47.531Z"
+    },
+    {
+      "issueNumber": 1708,
+      "fromStatus": "Backlog",
+      "toStatus": "A Fazer",
+      "at": "2026-10-13T17:59:47.531Z"
+    },
+    {
+      "issueNumber": 1709,
+      "fromStatus": "Backlog",
+      "toStatus": "Em Progresso",
+      "at": "2026-10-13T17:59:47.531Z"
+    },
+    {
+      "issueNumber": 1710,
+      "fromStatus": "Backlog",
+      "toStatus": "Aguardando PR",
+      "at": "2026-10-13T17:59:47.531Z"
     }
   ]
 }
